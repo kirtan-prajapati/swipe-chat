@@ -9,8 +9,8 @@
 
 ## Chat Installation steps
 
-composer create-project laravel/laravel googleLogin
-composer require laravel/ui
-php artisan ui bootstrap --auth
-database connection
-php artisan migrate
+- [composer create-project laravel/laravel googleLogin]
+- [composer require laravel/ui]
+- [php artisan ui bootstrap --auth]
+- [database connection]
+- [php artisan migrate]
