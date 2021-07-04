@@ -54,4 +54,19 @@ class User extends Authenticatable
         $user->save();
         return $user;
     }
+
+    public function scopeActiveUser($query)
+    {
+        return $query->where('id', '!=', auth()->user()->id);
+    }
+
+    public function scopeOnline($query)
+    {
+        return $query->where('id', '!=', auth()->user()->id)->where('isOnline','1');
+    }
+
+    public function scopeOffline($query)
+    {
+        return $query->where('id', '!=', auth()->user()->id)->where('isOnline','0');
+    }
 }

@@ -14,3 +14,5 @@
 - [php artisan ui bootstrap --auth]
 - [database connection]
 - [php artisan migrate]
+
+-[created custom helper file my_helper.php and run composer dump-autoload]
